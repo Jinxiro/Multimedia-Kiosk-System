@@ -31,6 +31,7 @@
 
 <style scoped>
     .button-area{
+        margin: 50px;
         display: grid;
         grid-template-columns: auto auto;
         .btn {
