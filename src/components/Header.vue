@@ -1,100 +1,104 @@
 <template>
     <div class="leftContainer">
-        <div class="clock a">
-            <h1>12:12 PM</h1>
-            <p>Friday, March 01, 2024</p>
-        </div>
-        <div class="whatsNew">
-            <h1>What's New</h1>
-            <p>Latest news and updates at Tesda RTC-KPVTC Davao </p>
-        </div>
+        <h1>I Create Success Because I Can</h1>
+        <p>Welcome to TESDA Regional Training Center – Korea Philippines Vocational Training Center, Davao</p>
     </div>
     <div class="button-area">
-    <div class="btn">
-        <img src="" alt="">
-        <p>Inquiries</p>
+        <div class="timeClock">
+            <img src="" alt="">
+            <h1>12:12 PM</h1>
+            <p>Friday, September 8, 2023</p>
+        </div>
+        <div class="btn">
+            <img src="/src/assets/images/Icons/WhatsNew.png" alt="">
+            <p>What's New?</p>
+        </div>
+        <div class="btn">
+            <img src="/src/assets/images/Icons/Inquire.png" alt="">
+            <p>Inquiries</p>
+        </div>
+        <div class="btn">
+            <img src="/src/assets/images/Icons/Register.png" alt="">
+            <p>Register</p>
+        </div>
+
+        <div class="btn">
+            <img src="/src/assets/images/Icons/Feedback.png" alt="">
+            <p>Feed back</p>
+        </div>
     </div>
-    <div class="btn">
-        <img src="" alt="">
-        <p>Register</p>
-    </div>
-    <div class="btn">
-        <img src="" alt="">
-        <p>Categories</p>
-    </div>
-    <div class="btn">
-        <img src="" alt="">
-        <p>Contact Us</p>
-    </div>
-</div>
 </template>
 
 <style scoped>
-    .button-area{
-        margin: 50px;
-        display: grid;
-        grid-template-columns: auto auto;
-        .btn {
-            margin: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 200px;
-            height: 200px;
-            border-radius: 5px;
-            color: white;
-            background-color: navy;
-            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.296);
-            p{
-                font-size: 18px;
-            }
-        }
-    }
-    .leftContainer{
+.button-area {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    .timeClock {
+        grid-column: 1 / span 2;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 50px;
-        gap: 20px;
-        .clock{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 200px;
-            width: 500px;
-            line-height: 5px;
-            border-radius: 5px;
-            background-color: navy;
-            h1{
-                color: white;
-                font-size: 50px;
-            }
-            p{
-                color: white;
-                font-size: 18px;
-            }
-        }
-        .whatsNew{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 200px;
-            width: 500px;
-            line-height: 5px;
-            border-radius: 5px;
-            background-color: rgb(171, 0, 0);
-            h1{
-                color: white;
-                font-size: 50px;
-            }
-            p{  
-                text-align: center;
-                color: white;
-                font-size: 15px;
-            }
+        border-radius: 15px;
+        line-height: 0;
+        color: white;
+        background-color: navy;
+        box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.296);
+        h1{
+            font-size: 70px;
         }
     }
-    </style>
+
+    .btn {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        color: navy;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.296);
+        transition: 0.5s;
+
+        &:hover {
+            cursor: pointer;
+            scale: .98;
+        }
+        img{
+            height: 60px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+.leftContainer {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 50px;
+    gap: 20px;
+
+    h1 {
+        margin: 0;
+        font-weight: 900;
+        font-size: 70px;
+        color: navy;
+        width: 700px;
+        line-height: 60px;
+    }
+
+    p {
+        margin-top: -15px;
+        width: 500px;
+    }
+}
+</style>
