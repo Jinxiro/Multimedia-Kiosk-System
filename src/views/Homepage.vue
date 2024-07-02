@@ -54,11 +54,12 @@ import Navigation from '../components/Navigation.vue'
         background-size: 1000px 200px;
       }
       .wave.wave1{
+        width: 100px;
         animation: animate 30s linear infinite;
         z-index: 1000;
         opacity: 1;
         animation-delay: 0s;
-        bottom: 0; 
+        bottom: 0;  
       }
       @keyframes animate {
         0%{
