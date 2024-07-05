@@ -22,6 +22,29 @@
         </div>
         </div>
     </dialog>
+<dialog id="feedBackForm">
+    <form action="" method="dialog">
+        <h3>Send Us Feedback</h3>
+        <div class="fullname">
+            <div>
+                <p>Name</p>
+                <input type="text">
+            </div>
+            <div>
+                <p>Middle Name</p>
+                <input type="text">
+            </div>
+            <div>
+                <p>Last Name</p>
+                <input type="text">
+            </div>
+        </div>
+        <div class="feedBackbox">
+            <p>Name</p>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your feedback or Recommendations"></textarea>
+        </div>
+    </form>
+</dialog>
     <div class="leftContainer">
         <h1>I Create Success Because I Can</h1>
         <p>Welcome to TESDA Regional Training Center – Korea Philippines Vocational Training Center, Davao</p>
@@ -45,7 +68,7 @@
             <p>Register</p>
         </div>
 
-        <div class="btn">
+        <div class="btn" onclick="feedBackForm.showModal()">
             <img src="/src/assets/images/Icons/Feedback.png" alt="">
             <p>Feed back</p>
         </div>
@@ -56,7 +79,8 @@
 
 </script>
 <style scoped>
-dialog {
+
+#registerModal {
     margin: auto;
     border: none;
     border-radius: 15px;
@@ -81,6 +105,7 @@ dialog {
             transition: 0.5s;
         }
     }
+
     .registerModal {
         display: flex;
         align-items: center;
@@ -127,7 +152,39 @@ dialog {
         
     }
 }
-
+#feedBackForm{
+    margin: auto;
+    border: none;
+    border-radius: 15px;
+    width: 50%;
+    form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .fullname{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            div{
+                margin: 10px;
+                input{
+                    width: 220px;
+                    padding: 10px 10px;
+                    border-radius: 5px;
+                    border: .5px solid;
+                }
+            }
+        }
+        .feedBackbox{
+            
+            textarea{
+                resize: none;
+      
+            }
+        }
+    }
+}
 .button-area {
     margin: 50px;
     display: grid;
@@ -152,7 +209,6 @@ dialog {
     }
 
     .btn {
-
         display: flex;
         justify-content: center;
         align-items: center;
