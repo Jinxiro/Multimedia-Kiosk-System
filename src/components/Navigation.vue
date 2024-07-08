@@ -14,14 +14,19 @@
     </nav>
 </template>
 <style scoped>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 nav{
+    position: absolute;
+    top: 0;
     padding: 20px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    top: 0;
     .logo{
         display: flex;
         justify-content: center;

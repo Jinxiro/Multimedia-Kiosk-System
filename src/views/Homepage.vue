@@ -3,73 +3,44 @@ import Header from '../components/Header.vue'
 import Navigation from '../components/Navigation.vue'
 </script>
 <template>
-    <main>
+  <main>
     <Navigation />
     <Header />
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,32L48,58.7C96,85,192,139,288,138.7C384,139,480,85,576,64C672,43,768,53,864,80C960,107,1056,149,1152,165.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
+    <div class='parent'>
+      <div class="magicpattern" />
+    </div>
   </main>
-  <section>
-    <div class="wave wave1"></div>
-    <div class="wave wave2"></div>
-    <div class="wave wave3"></div>
-  </section>
 
-    
+
 </template>
 <style scoped>
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        
-    }
-    body {
-        background-color: rgb(252, 148, 148);
-        
-    }
-    main{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 90vh;
-      svg{
-        bottom: 0;
-        z-index: -10;
-        position: absolute;
-        display: flex;
-      }
-    }
-    section{
-      outline: 1px solid 1px;
-      z-index: -99;
-      width: 100%;
-      overflow: hidden;
-      .wave{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100px;
-        background: url("/src/assets/images/wave.png");
-        background-size: 1000px 200px;
-      }
-      .wave.wave1{
-        width: 100px;
-        animation: animate 30s linear infinite;
-        z-index: 1000;
-        opacity: 1;
-        animation-delay: 0s;
-        bottom: 0;  
-      }
-      @keyframes animate {
-        0%{
-          background-position-x: 0;
-        }
-        100%{
-          background-position-x:  1000px;
-        }
-      }
-    }
-    
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.parent {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -10;
+  overflow: hidden;
+}
+
+.magicpattern {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+background-position: right;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22%3E%3Cstop offset=%220%25%22 stop-color=%22%23acb7ff%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%23e2e3ff%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M931 644.5Q898 789 759 829t-270.5 76Q357 941 264 840T140.5 619.5q-30.5-119.5-10-246t133-190.5q112.5-64 242-81t230 68.5Q836 256 900 378t31 266.5Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M931 644.5Q898 789 759 829t-270.5 76Q357 941 264 840T140.5 619.5q-30.5-119.5-10-246t133-190.5q112.5-64 242-81t230 68.5Q836 256 900 378t31 266.5Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
 </style>
