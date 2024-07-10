@@ -7,51 +7,37 @@
         <div class="registerModal">
             <div class="contentCard">
                 <h3>3-Year Diploma Courses</h3>
-                <p>Pursuant to Executive Order No. 83 Series of 2012 also known as the Philippine Qualifications Framework (PQF), the Center is now piloting 3-Year Diploma programs in Level 5 category (based on PQF 8-Level Descriptors) considering RTC-KorPhil Davao as the Center of Excellence for TVET in Mindanao.</p>
+                <p>Pursuant to Executive Order No. 83 Series of 2012 also known as the Philippine Qualifications
+                    Framework (PQF), the Center is now piloting 3-Year Diploma programs in Level 5 category (based on
+                    PQF 8-Level Descriptors) considering RTC-KorPhil Davao as the Center of Excellence for TVET in
+                    Mindanao.</p>
                 <button><a href="https://enroll.korphildavao.site/register">Continue</a></button>
             </div>
             <div class="contentCard">
                 <h3>Short-Term / Skills Upgrading Programs</h3>
-                <p>Courses designed to accommodate workers, for life-long training, and for those who did not avail the 3-Year Diploma programs. Qualifications (courses with TESDA Training Regulations or TR) in diploma programs are also offered individually in separate schedules.</p>
-            <button><a href="https://enroll.korphildavao.site/register">Continue</a></button>
-        </div>
-        <div class="contentCard">
-            <h3>Community-Based Skills Training</h3>
-                <p>In cooperation with Community Leaders (like political, church, or organization leaders) skills trainings are brought to the community to reach out the grassroots. Venues and schedules are depending on the stipulations in the Memorandum of Agreement (MOA) between the Center & the sponsoring partner.</p>
-            <button><a href="https://enroll.korphildavao.site/register">Continue</a></button>
-        </div>
+                <p>Courses designed to accommodate workers, for life-long training, and for those who did not avail the
+                    3-Year Diploma programs. Qualifications (courses with TESDA Training Regulations or TR) in diploma
+                    programs are also offered individually in separate schedules.</p>
+                <button><a href="https://enroll.korphildavao.site/register">Continue</a></button>
+            </div>
+            <div class="contentCard">
+                <h3>Community-Based Skills Training</h3>
+                <p>In cooperation with Community Leaders (like political, church, or organization leaders) skills
+                    trainings are brought to the community to reach out the grassroots. Venues and schedules are
+                    depending on the stipulations in the Memorandum of Agreement (MOA) between the Center & the
+                    sponsoring partner.</p>
+                <button><a href="https://enroll.korphildavao.site/register">Continue</a></button>
+            </div>
         </div>
     </dialog>
-<!-- <dialog id="feedBackForm">
-    <form action="" method="dialog">
-        <h3>Send Us Feedback</h3>
-        <div class="fullname">
-            <div>
-                <p>Name</p>
-                <input type="text">
-            </div>
-            <div>
-                <p>Middle Name</p>
-                <input type="text">
-            </div>
-            <div>
-                <p>Last Name</p>
-                <input type="text">
-            </div>
-        </div>
-        <div class="feedBackbox">
-            <p>Name</p>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your feedback or Recommendations"></textarea>
-        </div>
-    </form>
-</dialog> -->
-<dialog id="feedBackForm">
-    <form action="" method="dialog">
-        <h2>We Value your Feedback</h2>
-        <div class="closeBtn">
 
-            <button onclick="feedBackForm.showModal()">Cancel</button>
-        </div>
+    <dialog id="feedBackForm">
+        <form action="" method="dialog">
+            <h2>We Value your Feedback</h2>
+            <div class="closeBtn">
+
+                <button onclick="feedBackForm.showModal()">Cancel</button>
+            </div>
             <div>
                 <p>Name</p>
                 <input type="text">
@@ -64,37 +50,42 @@
                 <p>Last Name</p>
                 <input type="text">
             </div>
-        <div class="satisfaction">
-            <p>How satisfied you are?</p>
-            <select name="satisfied" id="satisfaction">
-                <option value="Very Satisfied">Very Satisfied</option>
-                <option value="Satisfied">Satisfied</option>
-                <option value="Natural">Natural</option>
-                <option value="Unsatisfied">Unsatisfied</option>
-                <option value="Very Unsatisfied">Very Unsatisfied</option>
-            </select>
-        </div>
-        <div class="feedBackbox">
-            <p>Feedback</p>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your feedback or Recommendations"></textarea>
-        </div>
-        <div class="agreePolicy">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quasi veniam harum! Similique voluptas consequuntur porro quos nam dolor iure aperiam possimus alias inventore repellat officia, at architecto modi aut.
-            </p>
+            <div class="satisfaction">
+                <p>How satisfied you are?</p>
+                <select name="satisfied" id="satisfaction">
+                    <option value="Very Satisfied">Very Satisfied</option>
+                    <option value="Satisfied">Satisfied</option>
+                    <option value="Natural">Natural</option>
+                    <option value="Unsatisfied">Unsatisfied</option>
+                    <option value="Very Unsatisfied">Very Unsatisfied</option>
+                </select>
+            </div>
+            <div class="feedBackbox">
+                <p>Feedback</p>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your feedback or Recommendations"></textarea>
+            </div>
+            <div class="agreePolicy">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quasi veniam harum! Similique voluptas
+                    consequuntur porro quos nam dolor iure aperiam possimus alias inventore repellat officia, at
+                    architecto modi aut.
+                </p>
             </div>
             <div class="submitBtn">
-            <button>Submit Feedback</button>
-        </div>
-    </form>
-</dialog>
+                <button>Submit Feedback</button>
+            </div>
+        </form>
+    </dialog>
     <div class="leftContainer">
+        <div class="roteteShape">
+        <img src="data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22%3E%3Cstop offset=%220%25%22 stop-color=%22%23acb7ff%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%23e2e3ff%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M931 644.5Q898 789 759 829t-270.5 76Q357 941 264 840T140.5 619.5q-30.5-119.5-10-246t133-190.5q112.5-64 242-81t230 68.5Q836 256 900 378t31 266.5Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M931 644.5Q898 789 759 829t-270.5 76Q357 941 264 840T140.5 619.5q-30.5-119.5-10-246t133-190.5q112.5-64 242-81t230 68.5Q836 256 900 378t31 266.5Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                alt="">
+        </div>
         <h1>I Create Success Because I Can</h1>
         <p>Welcome to TESDA Regional Training Center – Korea Philippines Vocational Training Center, Davao</p>
     </div>
     <div class="button-area">
         <div class="timeClock">
-            <img src="" alt="">
             <h1>12:12 PM</h1>
             <p>Friday, September 8, 2023</p>
         </div>
@@ -102,10 +93,12 @@
             <img src="/src/assets/images/Icons/WhatsNew.png" alt="">
             <p>What's New?</p>
         </div>
-        <div class="btn">
-            <img src="/src/assets/images/Icons/Inquire.png" alt="">
-            <p>Inquiries</p>
-        </div>
+        <RouterLink to="/InquiryPage" style="text-decoration: none;">
+            <div class="btn">
+                <img src="/src/assets/images/Icons/Inquire.png" alt="">
+                <p>Inquiries</p>
+            </div>
+        </RouterLink>
         <div class="btn" onclick="registerModal.showModal()">
             <img src="/src/assets/images/Icons/Register.png" alt="">
             <p>Register</p>
@@ -116,34 +109,49 @@
             <p>Feed back</p>
         </div>
     </div>
+
+
 </template>
 
 <script setup>
 
 </script>
 <style scoped>
-dialog{
-    &::backdrop{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+dialog {
+    margin: auto;
+
+    &::backdrop {
         backdrop-filter: blur(5px);
     }
 }
+
 #registerModal {
     margin: auto;
     border: none;
     border-radius: 15px;
     width: 70%;
-    &::backdrop{
+    padding: 20px 10px;
+
+    &::backdrop {
         backdrop-filter: blur(5px);
     }
-    .headmodal{
+
+    .headmodal {
         margin: auto;
         width: 90%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        button{
+
+        button {
             margin: 5px 0px;
-            
+
             padding: 10px;
             width: 100px;
             background-color: rgb(207, 207, 207);
@@ -158,7 +166,8 @@ dialog{
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        .contentCard{
+
+        .contentCard {
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.151);
             display: flex;
             justify-content: space-around;
@@ -170,77 +179,90 @@ dialog{
             width: 320px;
             height: 500px;
             margin: 20px;
-            h3{
+
+            h3 {
                 width: 250px;
             }
-            p{
+
+            p {
                 width: 250px;
             }
+
             button {
-            margin: 5px 10px;
-            padding: 20px;
-            width: 200px;
-            background-color: navy;
-            border: none;
-            border-radius: 5px;
-            transition: 0.5s;
+                margin: 5px 10px;
+                padding: 20px;
+                width: 200px;
+                background-color: navy;
+                border: none;
+                border-radius: 5px;
+                transition: 0.5s;
 
-            &:hover {
-                cursor: pointer;
-                scale: 1.01;
-            }
+                &:hover {
+                    cursor: pointer;
+                    scale: 1.01;
+                }
 
-            a {
-                text-decoration: none;
-                color: white;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
             }
         }
-        }
-        
+
     }
 }
-#feedBackForm{
+
+#feedBackForm {
+    padding: 50px 30px;
     border-radius: 10px;
-    padding: 20px;
     border: none;
-    form{
+
+    form {
         display: grid;
         gap: 10px;
         grid-template-columns: auto auto auto;
-        h2{
+
+        h2 {
             grid-column: 1/ span 2;
         }
-        .closeBtn{
-            display:flex;
+
+        .closeBtn {
+            display: flex;
             justify-content: right;
             align-items: center;
-            button{
+
+            button {
                 padding: 10px;
                 border: none;
                 border-radius: 5px;
             }
         }
-        input{
+
+        input {
             text-transform: uppercase;
             width: 200px;
             padding: 10px;
             border-radius: 5px;
         }
-        .satisfaction{
+
+        .satisfaction {
             flex-direction: column;
             display: flex;
-            select{
+
+            select {
                 padding: 10px;
                 border-radius: 5px;
             }
         }
-        .feedBackbox{
+
+        .feedBackbox {
 
             flex-direction: column;
             display: flex;
             width: auto;
             grid-column: 1 / span 3;
-            textarea{
+
+            textarea {
                 background-color: rgb(234, 234, 234);
                 height: 100px;
                 resize: none;
@@ -248,22 +270,26 @@ dialog{
                 border-radius: 5px;
             }
         }
-        .agreePolicy{
+
+        .agreePolicy {
             display: flex;
             justify-self: center;
             grid-column: 1 / span 3;
-            p{
+
+            p {
                 width: 700px;
                 text-align: center
             }
-            
+
         }
-        .submitBtn{
+
+        .submitBtn {
             display: flex;
             justify-content: center;
             align-items: center;
             grid-column: 1 / span 3;
-            button{
+
+            button {
                 color: white;
                 background-color: rgb(54, 54, 255);
                 border-radius: 5px;
@@ -273,42 +299,13 @@ dialog{
         }
     }
 }
-/* #feedBackForm{
-    margin: auto;
-    border: none;
-    border-radius: 15px;
-    width: 50%;
-    form{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        .fullname{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            div{
-                margin: 10px;
-                input{
-                    width: 220px;
-                    padding: 10px 10px;
-                    border-radius: 5px;
-                    border: .5px solid;
-                }
-            }
-        }
-        .feedBackbox{
-            
-            textarea{
-                resize: none;
-                width: 600px;
-      
-            }
-        }
-    }
-} */
+
+
+
+
+
+
 .button-area {
-    margin: 50px;
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 15px;
@@ -320,7 +317,6 @@ dialog{
         align-items: center;
         flex-direction: column;
         border-radius: 15px;
-        line-height: 0;
         color: white;
         background-color: navy;
         box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.296);
@@ -358,12 +354,38 @@ dialog{
     }
 }
 
+.roteteShape {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    position: absolute;
+    animation: spin 50s linear infinite;
+
+    img {
+        z-index: -1;
+        position: absolute;
+        height: 680px;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .leftContainer {
     display: flex;
     justify-content: center;
     align-items: left;
     flex-direction: column;
-    margin: 50px;
     gap: 20px;
 
     h1 {
@@ -380,13 +402,6 @@ dialog{
         width: 500px;
     }
 }
-.magicpattern { 
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: repeat;
-  background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22%3E%3Cstop offset=%220%25%22 stop-color=%22%23acb7ff%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%23e2e3ff%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M931 644.5Q898 789 759 829t-270.5 76Q357 941 264 840T140.5 619.5q-30.5-119.5-10-246t133-190.5q112.5-64 242-81t230 68.5Q836 256 900 378t31 266.5Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M931 644.5Q898 789 759 829t-270.5 76Q357 941 264 840T140.5 619.5q-30.5-119.5-10-246t133-190.5q112.5-64 242-81t230 68.5Q836 256 900 378t31 266.5Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-}
+
 
 </style>
