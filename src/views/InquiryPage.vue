@@ -3,7 +3,16 @@ import NavigationLight from '../components/NavigationLight.vue'
 </script>
 <template>
     <NavigationLight style="z-index: 10;" />
+    <dialog id="VideoPlayer">
+        <div class="contentplayer">
+
+            <iframe width="1000" height="500" src="https://www.youtube.com/embed/7Cj8bsys9aY?autoplay=1">
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam distinctio accusantium, quam molestiae veniam dicta aliquam odio optio, aspernatur libero assumenda veritatis fugit a itaque ea placeat magni modi. Est!</p>
+        </div>
+    </dialog>
     <main>
+        
         <div class="leftcontent">
             <div class="playArea">
 
@@ -12,8 +21,8 @@ import NavigationLight from '../components/NavigationLight.vue'
                     maxime alias vel fugiat, provident, praesentium doloribus veniam nam in deserunt non, corrupti atque
                     eius.</p>
                 <h3>Video Tutorial #1</h3>
-                <button>Play</button>
-                <button>More info</button>
+                <button onclick="VideoPlayer.showModal()">Play<i class="material-icons">play_circle_outline</i></button>
+                <button>More info<i class="material-icons">info_outline</i></button>
             </div>
         </div>
         <div class="rightcontent">
@@ -38,6 +47,18 @@ import NavigationLight from '../components/NavigationLight.vue'
 </template>
 
 <style scoped>
+dialog{
+    margin: auto;
+    padding: 20px;
+    width: 1200px;
+    border: none;
+    .contentplayer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
 .videoLibray{
     padding: 50px 100px;
     position: absolute;
@@ -93,12 +114,25 @@ main {
             display: grid;
             gap: 10px;
             grid-template-columns: auto auto;
-
+            a{
+                    font-weight: 500;
+                    text-decoration: none;
+                }
             button {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                background-color: rgb(255, 255, 255);
                 border: none;
                 border-radius: 5px;
-                width: 100px;
+                width: 120px;
                 padding: 10px 10px;
+                transition: 0.5s ease;
+                &:hover{
+                    scale: 1.05;
+                    background-color: rgb(225, 225, 255);
+                }
+               
             }
 
             h1 {
