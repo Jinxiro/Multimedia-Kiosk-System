@@ -8,7 +8,7 @@
         </div>
         <!-- <h1>WELCOME</h1> -->
         <div class="navBtn">
-        <button>Language</button>
+        <button>Contact Us</button>
         <button>About Us</button>
     </div>
     </nav>

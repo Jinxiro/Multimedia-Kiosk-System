@@ -8,13 +8,15 @@ import NavigationLight from "../components/NavigationLight.vue";
 
   <div class="dialogs">
     <dialog id="SeeMoreSection">
-      
-      <h1>Tutorials</h1>
-      <button onclick="SeeMoreSection.close()">close</button>
+
+      <div class="headerSec">
+        <h1>Tutorials</h1>
+        <button onclick="SeeMoreSection.close()">close</button>
+      </div>
 
       <div class="tutorialCard">
         <img
-          src="https://i.ytimg.com/an_webp/_psDrS3VUbQ/mqdefault_6s.webp?du=3000&sqp=CNjjwLUG&rs=AOn4CLDFMDa7qhcHLjQTf2o59c1KTUPcUA"
+          src="/src/assets/images/OR-Thumbnail.png"
           alt="">
         <div class="details">
           <h1>Online Registration</h1>
@@ -28,7 +30,7 @@ import NavigationLight from "../components/NavigationLight.vue";
       </div>
       <div class="tutorialCard">
         <img
-          src="https://i.ytimg.com/an_webp/6OiPqWZ5OK8/mqdefault_6s.webp?du=3000&sqp=CO2wwLUG&rs=AOn4CLCIl9ouyxJhd0xkQPGpJuZYJtBT9Q"
+          src="/src/assets/images/EP-Thumbnail.jpg"
           alt="">
         <div class="details">
           <h1>Enrollment Process</h1>
@@ -70,9 +72,10 @@ import NavigationLight from "../components/NavigationLight.vue";
         <button onclick="EnrollmenProcess.close()">close</button>
       </div>
     </dialog>
+    
     <dialog id="OnlineReg">
       <div class="contentplayer">
-        <h1>Enrollment Process</h1>
+        <h1>Online Registration</h1>
         <iframe src="https://youtube.com/embed/_psDrS3VUbQ?autoplay=1">
         </iframe>
         <p>
@@ -98,7 +101,7 @@ import NavigationLight from "../components/NavigationLight.vue";
         </p>
         <h3>Introduction</h3>
         <button onclick="VideoPlayer.showModal()">
-          Play<i class="material-icons">play_circle_outline</i>
+        Play<i class="material-icons">play_circle_outline</i>
         </button>
         <button>More info<i class="material-icons">info_outline</i></button>
       </div>
@@ -117,10 +120,10 @@ import NavigationLight from "../components/NavigationLight.vue";
     <div class="videoLibray">
       <h3>Other Video Tutorial</h3>
       <div class="videos">
-
+  
         <div class="thumbnail" onclick="OnlineReg.showModal()">
           <img
-            src="https://i.ytimg.com/an_webp/_psDrS3VUbQ/mqdefault_6s.webp?du=3000&sqp=CNjjwLUG&rs=AOn4CLDFMDa7qhcHLjQTf2o59c1KTUPcUA"
+            src="/src/assets/images/OR-Thumbnail.png"
             alt="" />
           <div class="content">
             <h1>Register Online</h1>
@@ -130,7 +133,7 @@ import NavigationLight from "../components/NavigationLight.vue";
         </div>
         <div class="thumbnail" onclick="EnrollmenProcess.showModal()">
           <img
-            src="https://i.ytimg.com/an_webp/6OiPqWZ5OK8/mqdefault_6s.webp?du=3000&sqp=CO2wwLUG&rs=AOn4CLCIl9ouyxJhd0xkQPGpJuZYJtBT9Q"
+            src="/src/assets/images/EP-Thumbnail.jpg"
             alt="" />
           <div class="content">
             <h1>Enrollment Process</h1>
@@ -140,7 +143,7 @@ import NavigationLight from "../components/NavigationLight.vue";
         </div>
         <div class="thumbnail" onclick="EnrollmenProcess.showModal()">
           <img
-            src="https://i.ytimg.com/an_webp/6OiPqWZ5OK8/mqdefault_6s.webp?du=3000&sqp=CO2wwLUG&rs=AOn4CLCIl9ouyxJhd0xkQPGpJuZYJtBT9Q"
+            src="https://i.ytimg.com/an_webp/6OiPqWZ5OK8/mqdefault_6s.webp?du=3000&sqp=COqL4bUG&rs=AOn4CLDIllV20_SoE9Pk-M2acFjUDBNtEg "
             alt="" />
           <div class="content">
             <h1>Enrollment Process</h1>
@@ -148,7 +151,7 @@ import NavigationLight from "../components/NavigationLight.vue";
             <p>Play Video</p><i class="material-icons">play_circle_outline</i></p>
           </div>
         </div>
-
+  
         <div class="seeAllbtn">
           <button onclick="SeeMoreSection.showModal()">See All</button>
         </div>
@@ -189,16 +192,37 @@ dialog {
   &::backdrop {
     backdrop-filter: blur(10px);
   }
+  .headerSec{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+      font-size: 60px;
+    }
+    button{
+      padding: 10px;
+      background-color: rgb(197, 197, 197);
+      border: none;
+      border-radius: 5px;
+    }
+  }
   .tutorialCard{
     margin: 10px 0px  ;
-    padding: 20px;
-    background-color: whitesmoke;
+    padding: 10px;
+    background-color: rgb(236, 236, 236);
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center; 
+    transition: 0.5s ease;
+    &:hover{
+      cursor: pointer;
+      background-color: rgb(215, 215, 215);
+    }
     img{
-      padding: 10px;
+      border-radius: 10px;
+      height: 200px;
+      margin: 20px;
     }
     button{
       display: flex;
